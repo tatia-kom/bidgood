@@ -20,6 +20,7 @@
     position: absolute;
     top: 100px;
     right: calc(50% + 100px);
+    pointer-events: none;
 
     @media (max-width: $lg) {
       right: calc(50% + 200px);

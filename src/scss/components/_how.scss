@@ -28,6 +28,7 @@
     margin-left: calc(50% - 130px);
     transform: translateX(-50%);
     position: relative;
+    pointer-events: none;
 
     @media (max-width: $lg) {
       margin-left: calc(50% - 180px);

@@ -11,6 +11,7 @@
     position: absolute;
     top: 0;
     left: calc((100vw - 1400px) / 2 + 606px);
+    pointer-events: none;
 
     @media (max-width: $lg) {
       left: calc((100vw - 1140px) / 2 + 606px);
