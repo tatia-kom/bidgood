@@ -1,0 +1,37 @@
+//fonts
+$font: 'Roboto';
+$fontTitle: 'Poppins';
+
+//colors
+
+$black: #222327;
+$grey: #92929D;
+$primary: #3DD598;
+$white: #FAFAFB;
+
+//media
+
+$lg: 1499px;
+$md: 1199px;
+$sm: 991px;
+$xs: 767px;
+
+// mixins
+
+@mixin placeholderColor($color) {
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+  &::placeholder {
+    color: $color;
+  }
+}

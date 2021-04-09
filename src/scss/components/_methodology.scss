@@ -1,0 +1,66 @@
+.methodology {
+  padding: 291px 0 0;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $sm) {
+    padding-top: 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: calc((100vw - 1400px) / 2 + 606px);
+
+    @media (max-width: $lg) {
+      left: calc((100vw - 1140px) / 2 + 606px);
+    }
+
+    @media (max-width: $md) {
+      left: calc((100vw - 932px) / 2 + 646px);
+    }
+
+    @media (max-width: $sm) {
+      position: relative;
+      left: 0;
+    }
+
+    @media (max-width: $xs) {
+      width: 150%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    img:last-child {
+      position: absolute;
+      top: 126px;
+      left: -80px;
+
+      @media (max-width: $xs) {
+        top: 50px;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+
+    @media (max-width: $sm) {
+      margin-top: -300px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: -150px;
+    }
+  }
+
+  .text {
+    max-width: 570px;
+  }
+
+  .button {
+    margin-top: 70px;
+  }
+}

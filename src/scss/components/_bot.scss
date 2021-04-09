@@ -1,0 +1,87 @@
+.bot {
+  overflow: hidden;
+  padding: 200px 0;
+  position: relative;
+
+  @media (max-width: $sm) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $xs) {
+    padding-bottom: 106px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  &__img {
+    position: absolute;
+    top: 145px;
+    right: calc((100vw - 1400px) / 2 + 200px + 500px);
+
+    @media (max-width: $lg) {
+      right: calc((100vw - 1140px) / 2 + 120px + 500px);
+    }
+
+    @media (max-width: $md) {
+      right: calc((100vw - 932px) / 2 + 120px + 500px);
+    }
+
+    @media (max-width: $sm) {
+      position: relative;
+      right: 300px;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 150%;
+      margin-top: 52px;
+      top: 0;
+      right: 32px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    img:last-child {
+      position: absolute;
+      top: 0;
+      right: -110px;
+
+      @media (max-width: $sm) {
+        right: -370px;
+      }
+
+      @media (max-width: $xs) {
+        right: -50px;
+      }
+    }
+  }
+
+  &__content {
+    width: 500px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 80px;
+    position: relative;
+
+    @media (max-width: $lg) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+      margin-top: 150px;
+      width: 100%;
+
+      .text {
+        max-width: 500px;
+      }
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,363 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Bidgood
+        link(rel="stylesheet" type="text/css" href="css/style.min.css")
+        link(rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico")
+    body
+        section.top
+            // HEADER
+            include ../components/header.pug
+
+            div.top__left
+                img(src="img/top-left.svg" alt="")
+
+            div.top__img
+                img(src="img/top.svg" alt="")
+
+            div.container
+                div.top__content
+                    h1.top__title Cryptocurrency
+                    h2.top__subtitle Investing on Autopilot
+                    p.text Bidgood is a customizable cryptocurrency trading bot that enables users to index the market, create custom portfolios, and automatically rebalance their cryptocurrency portfolios.
+                    button.button Get started
+
+        section.bot
+            div.bot__img
+                img(src="img/bot.svg" alt="")
+                img(src="img/bot.png" alt="")
+            div.container
+                div.bot__content
+                    h2.title Your Personal <br/>Crypto Trading Bot
+                    p.text Grow your portfolio like the world's most sophisticated investors. We're making institutional portfolio management software available to everyone.
+                    p.text.text--bold Bidgood is free to try for the first 7-days. A paid subscription starts at only $3/month.
+                    button.button Get started
+
+        section.steps
+            div.container
+                h2.title.title--center How to Get Started
+                div.steps__flex
+                    div.steps-item
+                        div.steps-item__bg
+                            img(src="img/step1.svg" alt="")
+                        div.steps-item__content
+                            img(src="img/step1-icon.svg" alt="")
+                            p.steps-item__name Connect Exchange
+                            p.steps-item__description Connect Bidgood  to your exchange. <br />API keys are securely encrypted <br />(HMAC SHA-256).
+                    div.steps-item
+                        div.steps-item__bg
+                            img(src="img/step2.svg" alt="")
+                        div.steps-item__content
+                            img(src="img/step2-icon.svg" alt="")
+                            p.steps-item__name Create or select strategy
+                            p.steps-item__description Create a custom portfolio based <br />on advanced metrics or implement <br />an existing strategy.
+                    div.steps-item
+                        div.steps-item__bg
+                            img(src="img/step3.svg" alt="")
+                        div.steps-item__content
+                            img(src="img/step3-icon.svg" alt="")
+                            p.steps-item__name Automatically Rebalance
+                            p.steps-item__description Bidgood keeps your portfolio <br />on track by automatically executing <br />portfolio rebalances.
+
+                p.steps__note So you're new to Bidgood? No problem.
+                button.button try it now
+
+        section.pricing
+            div.container
+                h2.title.title--center Pricing
+                p.pricing__description Bidgood pricing is tiered based on your portfolio size inorder to keep <br />our service affordable for those with smaller account sizes.
+
+                div.pricing__flex
+                    div.pricing-item
+                        p.pricing-item__name Silver
+                        p.pricing-item__price $<span>3</span>/month
+                        p.pricing-item__label Account Value
+                            strong Under $500
+                        button.button Buy now
+                    div.pricing-item.pricing-item--big
+                        p.pricing-item__name Bronze
+                        p.pricing-item__price $<span>6</span>/month
+                        p.pricing-item__label Account Value
+                            strong $500 - $1,000
+                        button.button Buy now
+                    div.pricing-item
+                        p.pricing-item__name Gold
+                        p.pricing-item__price $<span>14</span>/month
+                        p.pricing-item__label Account Value
+                            strong Over $1000
+                        button.button Buy now
+
+        section.methodology
+            div.methodology__img
+                img(src="img/methodology.svg" alt="")
+                img(src="img/methodology.png" alt="")
+
+            div.container
+                p.title Cryptocurrency Indices
+                p.text.text--bold Diversify Across the Entire Market with One Click
+                p.text Diversification mitigates risk and improves returns. Studies found that 95% of active traders fail to beat the index. We built the HODL indices for users who want to diversify across the market instead of picking individual coins.
+                button.button red methodology
+
+            div.portfolios
+                div.portfolios__img
+                    img(src="img/portfolios.svg" alt="")
+                    img(src="img/portfolios.png" alt="")
+                div.container
+                    div.portfolios__content
+                        p.title Customized Portfolios
+                        p.text.text--bold Create Portfolios with Advanced Market Metrics
+                        p.text Select any coins, choose a weighting strategy, and see how it performed in the past. Use advanced market metrics to construct dynamic portfolios. You can also create a cryptocurrency index comprised of the top N coins.
+                        button.button how it works
+
+            div.rebalancing
+                div.rebalancing__img
+                    img(src="img/rebalancing.svg" alt="")
+                    img(src="img/rebalancing.png" alt="")
+                div.container
+                    div.rebalancing__content
+                        p.title Automatic Rebalancing
+                        p.text.text--bold Rebalances Keep Your Portfolio on Track.
+                        p.text When the market shifts, a portfolio will drift away from its target allocation. Bidgood  automatically rebalances your portfolio to keep it on track, saving you time. Portfolio rebalances generally lead to risk mitigation and improved returns.
+                        button.button rebalancing study
+
+            div.needs
+                div.needs__img
+                    img(src="img/needs.svg" alt="")
+                    img(src="img/needs.png" alt="")
+                div.container
+                    div.needs__content
+                        p.title Tailored to Your Needs
+                        p.text.text--bold Customize HodlBot to Fit your Preferences.
+                        p.text Change your rebalancing frequency, blacklist coins you want to avoid trading, liquidate your assets anytime. Bidgood is highly customizable. On top of that, we provide 24/7 customer support.
+                        button.button Eхplore wiki
+
+        section.how
+            div.container
+                h2.title.title--center How it Works
+                p.how__description Bidgood simplifies the trading experience by making it possible <br />to manage your portfolio without interfacing directly with exchanges.
+
+                div.how__img
+                    img(src="img/how2.png" alt="")
+                    img(src="img/how1.png" alt="")
+
+                div.how__flex
+                    div.how-item
+                        img(src="img/how-item1.svg" alt="")
+                        p.how-item__num 50M<small>+</small>
+                        p.how-item__text Trading Volume
+                    div.how-item
+                        img(src="img/how-item2.svg" alt="")
+                        p.how-item__num 400k<small>+</small>
+                        p.how-item__text Transactions
+                    div.how-item
+                        img(src="img/how-item3.svg" alt="")
+                        p.how-item__num 10k<small>+</small>
+                        p.how-item__text Happy Users
+                    div.how-item
+                        img(src="img/how-item4.svg" alt="")
+                        p.how-item__num 20k<small>+</small>
+                        p.how-item__text Portfolios Created
+
+        section.customers
+            div.container
+                h2.title.title--center Join Thousands of Happy Customers
+                p.customers__description Want to talk to active users? Join our 600+ member Telegram group.
+
+                div.customers__slider
+                    div.customers__slide
+                        div.customers-card
+                            div.customers-card__top
+                                div.customers-card__ava
+                                    img(src="img/ava1.png" alt="")
+                                div.customers-card__user
+                                    p.customers-card__name Marleah Eagleston
+                                    p.customers-card__post Founder at Spicenet
+                                a.customers-card__icon(href="")
+                                    img(src="img/twitter.svg" alt="")
+
+                            div.customers-card__img
+                                img(src="img/customer1.png" alt="")
+                            p.customers-card__text Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…
+                            p.customers-card__date 9:13 PM · Nov 9, 2018
+
+                    div.customers__slide
+                        div.customers-card
+                            div.customers-card__top
+                                div.customers-card__ava
+                                    img(src="img/ava2.png" alt="")
+                                div.customers-card__user
+                                    p.customers-card__name Prescott MacCaffery
+                                    p.customers-card__post Designer, Freelancer
+                                a.customers-card__icon(href="")
+                                    img(src="img/twitter.svg" alt="")
+
+                            div.customers-card__img
+                                img(src="img/customer2.png" alt="")
+                            p.customers-card__text Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…
+                            p.customers-card__date 9:13 PM · Nov 9, 2018
+
+                    div.customers__slide
+                        div.customers-card
+                            div.customers-card__top
+                                div.customers-card__ava
+                                    img(src="img/ava1.png" alt="")
+                                div.customers-card__user
+                                    p.customers-card__name Marleah Eagleston
+                                    p.customers-card__post Founder at Spicenet
+                                a.customers-card__icon(href="")
+                                    img(src="img/twitter.svg" alt="")
+
+                            div.customers-card__img
+                                img(src="img/customer1.png" alt="")
+                            p.customers-card__text Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…
+                            p.customers-card__date 9:13 PM · Nov 9, 2018
+
+                    div.customers__slide
+                        div.customers-card
+                            div.customers-card__top
+                                div.customers-card__ava
+                                    img(src="img/ava3.png" alt="")
+                                div.customers-card__user
+                                    p.customers-card__name Aaron Almaraz
+                                    p.customers-card__post CEO & Founder at Gearat
+                                a.customers-card__icon(href="")
+                                    img(src="img/twitter.svg" alt="")
+
+                            div.customers-card__img
+                                img(src="img/customer3.png" alt="")
+                            p.customers-card__text Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…
+                            p.customers-card__date 9:13 PM · Nov 9, 2018
+
+                    div.customers__slide
+                        div.customers-card
+                            div.customers-card__top
+                                div.customers-card__ava
+                                    img(src="img/ava3.png" alt="")
+                                div.customers-card__user
+                                    p.customers-card__name Aaron Almaraz
+                                    p.customers-card__post CEO & Founder at Gearat
+                                a.customers-card__icon(href="")
+                                    img(src="img/twitter.svg" alt="")
+
+                            div.customers-card__img
+                                img(src="img/customer3.png" alt="")
+                            p.customers-card__text Time is the most precious thing you have when bootstrapping. You can't take time to ponder on design…
+                            p.customers-card__date 9:13 PM · Nov 9, 2018
+
+        section.join
+            div.join-right
+                img(src="img/join-right.svg" alt="")
+
+                div.join-right__img.join-right__img--1
+                    img(src="img/join-right1.png" alt="")
+                div.join-right__img.join-right__img--2
+                    img(src="img/join-right2.png" alt="")
+                div.join-right__img.join-right__img--3
+                    img(src="img/join-right3.png" alt="")
+                div.join-right__img.join-right__img--4
+                    img(src="img/join-right4.png" alt="")
+
+            div.join-left
+                img(src="img/join-left.svg" alt="")
+
+                div.join-left__img.join-left__img--1
+                    img(src="img/join-left1.png" alt="")
+                div.join-left__img.join-left__img--2
+                    img(src="img/join-left2.png" alt="")
+                div.join-left__img.join-left__img--3
+                    img(src="img/join-left3.png" alt="")
+                div.join-left__img.join-left__img--4
+                    img(src="img/join-left4.png" alt="")
+
+            div.container
+                div.join__content
+                    div.join__logo
+                        img(src="img/logo.svg" alt="")
+                    p.join__text Ready to get started?
+                    p.join__title Join us right now!
+                    p.join__description Try Bidgood  free for 7 days. No credit card needed.
+                    button.button Get started
+
+        // FOOTER
+        include ../components/footer.pug
+
+        // MODALS
+
+        div.modal#signIn
+            div.modal__content
+                button.modal__close.close-modal
+
+                p.modal__title Sign In
+
+                form.modal__form
+                    input.modal__input(type="text" placeholder="Login")
+                    input.modal__input(type="password" placeholder="Password")
+
+                    button.modal__forget-link.open-modal(data-modal="#passwordReset") Forgot password?
+
+                    button.button Enter
+
+                a.modal__google(href="") Sign in with Google
+
+                p.modal__link Don't have a Bidgood account? <a href="" class="open-modal" data-modal="#signUp">Sign Up</a>
+
+        div.modal#signUp
+            div.modal__content
+                button.modal__close.close-modal
+
+                p.modal__title Sign Up
+
+                form.modal__form
+                    input.modal__input(type="email" placeholder="Email")
+                    input.modal__input(type="password" placeholder="Password")
+                    input.modal__input(type="password" placeholder="Confirm Password")
+
+                    button.button Registration
+
+                a.modal__google(href="") Sign Up with Google
+
+                p.modal__link Already have an Bidgood account? <a href="" class="open-modal" data-modal="#signIn">Sign In</a>
+
+        div.modal#passwordReset
+            div.modal__content
+                button.modal__close.close-modal
+
+                p.modal__title Password Reset
+                p.modal__text To reset you password enter your email address below and follow the instructions that we will send to you.
+
+                form.modal__form.modal__form--t69
+                    input.modal__input(type="email" placeholder="Email")
+
+                    button.button Send
+
+        div.modal#passwordReset2
+            div.modal__content
+                button.modal__close.close-modal
+
+                p.modal__title Password Reset
+                p.modal__text E-mail was sent to
+                p.modal__email asdfghjklqwertygh@gmail.com
+
+                p.modal__text.modal__text--white We've sent the instructions to your email. Go check it
+                p.modal__text You can keep this page open while you check your email. <br />If you don't receive the instructions within a minute <br />or two try resending the instructions.
+
+                button.button.close-modal Ok
+
+        div.modal#changePassword
+            div.modal__content
+                button.modal__close.close-modal
+
+                p.modal__title Change Password
+
+                form.modal__form
+                    input.modal__input(type="password" placeholder="New Password")
+                    input.modal__input(type="password" placeholder="Repeat New Password")
+
+                    button.button Submit
+
+
+        // SCRIPTS
+        include ../components/scripts.pug
